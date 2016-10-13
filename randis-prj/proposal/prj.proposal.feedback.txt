@@ -1,0 +1,9 @@
+10 pts
+
+The idea is great. Using NNs is interesting and if you (we) are successful in
+this project you (we) could write a paper for a conference (if you are
+interested). I don't know a thing about Keras, but if sklearn is not good
+enough for you, go for it.
+
+
+- Dr. Rivas
