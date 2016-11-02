@@ -50,10 +50,9 @@ for n_neighbors in range(1,101,2):
 
 # to do here: given this array of E_outs in CV, find the max, its 
 # corresponding index, and its corresponding value of n_neighbors
-bestk = sorted(bestk)
 print(bestk)
 idx = sorted(range(len(bestk)),key=bestk.__getitem__)
 print (idx)
-print (idx[-1]*2)
-print (idx[-2]*2)
-print (idx[-3]*2)
+print ((idx[-1]*2)+1)
+print ((idx[-2]*2)+1)
+print ((idx[-3]*2)+1)
