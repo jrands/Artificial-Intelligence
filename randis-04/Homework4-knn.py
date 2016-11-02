@@ -39,7 +39,7 @@ for n_neighbors in range(1,101,2):
     clf = neighbors.KNeighborsRegressor(n_neighbors, weights='distance')
     clf.fit(X_train, y_train)
   
-    kscore.append(clf.score(X_test,y_test))
+    kscore.append(abs(clf.score(X_test,y_test)))
     #print kscore[k]
     k=k+1
   
@@ -52,3 +52,8 @@ for n_neighbors in range(1,101,2):
 # corresponding index, and its corresponding value of n_neighbors
 bestk = sorted(bestk)
 print(bestk)
+idx = sorted(range(len(bestk)),key=bestk.__getitem__)
+print (idx)
+print (idx[-1]*2)
+print (idx[-2]*2)
+print (idx[-3]*2)
