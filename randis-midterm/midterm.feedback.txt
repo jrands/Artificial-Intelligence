@@ -1,0 +1,24 @@
+95pts
+
+John,
+
+Here is your feedback and grade breakdown by problems:
+
+1) The experiments seem ok, except that you may not have given the perceptron
+enough time to make progress after the linear regression starting point. What
+if 200 wasn't enough? -1pt
+Did you only run the experiment once? Or the result is the average of multiple
+trials? - 1pt
+
+2) It seems like the code works only for initially small values of N. What if I
+over-estimate N and start with N=1,000,000? Your code would not work. -1pt
+Why is your code not commented? -2pts
+Also, code produces incorrect result. -5pts
+
+3) Nice picture/drawing. But I would never wear something that could be
+offensive for women. Its funny though. +5pts
+
+
+Peace,
+
+- Dr. Rivas
