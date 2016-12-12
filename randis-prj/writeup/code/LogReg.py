@@ -1,3 +1,12 @@
+# Modified by: John Randis <John.Randis1@Marist.edu>
+# on Nov/7/2016
+# Original Code:
+# https://www.kaggle.com/bmetka/leaf-classification/logistic-regression/code
+# Original Authors:
+#          benjo <confidential>
+#
+# License: Apache 2.0
+
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LogisticRegression
@@ -5,7 +14,7 @@ from sklearn.grid_search import GridSearchCV
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler
 
-np.random.seed(42)
+np.random.seed(2345)
 
 train = pd.read_csv('train.csv')
 x_train = train.drop(['id', 'species'], axis=1).values
@@ -34,3 +43,4 @@ y_test = clf.predict_proba(x_test)
 
 submission = pd.DataFrame(y_test, index=test_ids, columns=le.classes_)
 submission.to_csv('submission_log_reg.csv')
+
